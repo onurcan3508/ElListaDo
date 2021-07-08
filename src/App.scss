@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+        width: 250px;
+    }
+}
+
+.movie-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+        overflow: hidden;
+        width: 360px;
+        cursor: pointer;
+        margin: 15px;
+        transition: 350ms;
+        img {
+            transition: 350ms;
+            margin-bottom: 5px;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        &:hover {
+            -webkit-box-shadow: 0px 5px 35px -3px rgba(0,0,0,0.43);
+            -moz-box-shadow: 0px 5px 35px -3px rgba(0,0,0,0.43);
+            box-shadow: 0px 5px 35px -3px rgba(0,0,0,0.43);
+        }
+        .card-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}

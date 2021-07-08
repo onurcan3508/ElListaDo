@@ -1,0 +1,11 @@
+.search-box {
+    .form-control {
+        width: 500px;
+        text-align: center;
+        font-size: 25px;
+        transition: 350ms;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

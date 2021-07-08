@@ -1,0 +1,86 @@
+.sec1 {
+    background-color: #f0f5fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+    height: calc(100vh);
+    .container {
+        p {
+            color: #2c346c;
+            font-size: 130px;
+            transition: 250ms;
+            &:nth-child(1) {
+                animation-delay: 600ms;
+            }
+            &:nth-child(2) {
+                animation-delay: 800ms;
+            }
+            &:nth-child(3) {
+                animation-delay: 1200ms;
+                font-size: 40px;
+                font-weight:lighter;
+                color: #e8a3ca;
+            }
+        }
+    }
+}
+
+.sec2 {
+    border: 1px solid #2c346c;
+    width: 100vw;
+    background-color: #2c346c;
+    .container {
+        text-align: center;
+        h1 {
+            color: #e8a3ca;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .col-lg-4 {
+            h5 {
+                color: #fb795b;
+                font-size: 22px;
+            }
+            p {
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .sec1 {
+        background-color: #f0f5fc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: calc(100vh);
+        .container {
+            .sec1svg {
+                width: 80%;
+                height: 80%;
+            }
+            p {
+                color: #2c346c;
+                font-size: 60px;
+                transition: 250ms;
+                &:nth-child(1) {
+                    animation-delay: 500ms;
+                }
+                &:nth-child(2) {
+                    animation-delay: 800ms;
+                }
+                &:nth-child(3) {
+                    animation-delay: 1000ms;
+                    font-size: 30px;
+                    font-weight:lighter;
+                    color: #e8a3ca;
+                }
+            }
+        }
+    }
+}
